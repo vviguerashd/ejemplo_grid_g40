@@ -1,0 +1,43 @@
+.parent_white{
+    width: auto;
+    height: 80vh;
+    background-color: rgb(210, 228, 228);
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 14px;
+    justify-items: center;
+    align-items: center;
+}
+
+.parent_white div{
+    width: 100%;
+    height: 100%;
+}
+
+.parent_white div:nth-child(2n){
+    background-color: rgb(127, 222, 71);
+}
+
+.parent_white div:nth-child(2n-1){
+    background-color: rgb(211, 40, 223);
+}
+
+#one{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+#four{
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+#six{
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
